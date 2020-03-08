@@ -51,6 +51,7 @@
 		9940FE202415855A004D6551 /* coo-questionaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "coo-questionaryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9940FE242415855A004D6551 /* coo_questionaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coo_questionaryUITests.swift; sourceTree = "<group>"; };
 		9940FE262415855A004D6551 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9940FE3224158628004D6551 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +110,7 @@
 				9940FE102415855A004D6551 /* Info.plist */,
 				9940FE0324158557004D6551 /* coo_questionary.xcdatamodeld */,
 				9940FE0A2415855A004D6551 /* Preview Content */,
+				9940FE3224158628004D6551 /* README.md */,
 			);
 			path = "coo-questionary";
 			sourceTree = "<group>";
