@@ -20,7 +20,7 @@ class AnswerIntTest: AnswerTest<Int>
     }
        
    
-    func testisGoodType()
+    func testIsGoodType()
     {
         XCTAssertFalse(self.answer.isGoodType(solution: "a"))
         XCTAssertFalse(self.answer.isGoodType(solution: "a1"))
