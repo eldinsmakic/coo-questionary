@@ -12,14 +12,14 @@ import Foundation
 class AnswerInt : Answer<Int>
 {
     
-    override func isGoodType(s: String) -> Bool {
-       return canBeConverted(s: s)
+    override func isGoodType(solution: String) -> Bool {
+       return canBeConverted(solution: solution)
     }
     
-    override func isGoodAnswer(s: String) -> Bool {
-        if (isGoodType(s: s))
+    override func isGoodAnswer(solution: String) -> Bool {
+        if (isGoodType(solution: solution))
         {
-            return isEqual(s: s)
+            return isEqual(solution: solution)
         }
         else
         {
@@ -27,21 +27,21 @@ class AnswerInt : Answer<Int>
         }
     }
     
-    override func canBeConverted(s:String) -> Bool
+    override func canBeConverted(solution:String) -> Bool
     {
-        let x = Int(s.trimmingCharacters(in: .whitespacesAndNewlines))
+        let x = Int(solution.trimmingCharacters(in: .whitespacesAndNewlines))
         return x != nil
     }
     
-    override func convertToAnswer(s:String) -> Int
+    override func convertToAnswer(solution:String) -> Int
     {
-        return Int(s.trimmingCharacters(in: .whitespacesAndNewlines))!
+        return Int(solution.trimmingCharacters(in: .whitespacesAndNewlines))!
     }
     
     /// Check if s is Equal to Answer's solution
     /// - Parameter s: s potential solution
-    override func isEqual(s:String) -> Bool
+    override func isEqual(solution:String) -> Bool
     {
-        return self.getAnswer() == self.convertToAnswer(s: s)
+        return self.getAnswer() == self.convertToAnswer(solution: solution)
     }
 }

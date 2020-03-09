@@ -6,7 +6,6 @@
 //  Copyright © 2020 eldin smakic. All rights reserved.
 //
 
-
 import XCTest
 
 @testable import coo_questionary
@@ -23,23 +22,23 @@ class AnswerIntTest: AnswerTest<Int>
    
     func testisGoodType()
     {
-        XCTAssertFalse(self.answer.isGoodType(s: "a"))
-        XCTAssertFalse(self.answer.isGoodType(s: "a1"))
-        XCTAssertFalse(self.answer.isGoodType(s: "deux"))
-        XCTAssertFalse(self.answer.isGoodType(s: "%"))
-        XCTAssertTrue(self.answer.isGoodType(s: "1"))
-        XCTAssertTrue(self.answer.isGoodType(s: "1993"))
-        XCTAssertTrue(self.answer.isGoodType(s: "0"))
-        XCTAssertTrue(self.answer.isGoodType(s: " 14 "))
+        XCTAssertFalse(self.answer.isGoodType(solution: "a"))
+        XCTAssertFalse(self.answer.isGoodType(solution: "a1"))
+        XCTAssertFalse(self.answer.isGoodType(solution: "deux"))
+        XCTAssertFalse(self.answer.isGoodType(solution: "%"))
+        XCTAssertTrue(self.answer.isGoodType(solution: "1"))
+        XCTAssertTrue(self.answer.isGoodType(solution: "1993"))
+        XCTAssertTrue(self.answer.isGoodType(solution: "0"))
+        XCTAssertTrue(self.answer.isGoodType(solution: " 14 "))
     }
     
     func testIsGoodAnswer()
     {
-        XCTAssertFalse(self.answer.isGoodAnswer(s: "0"))
-        XCTAssertFalse(self.answer.isGoodAnswer(s: "test"))
-        XCTAssertFalse(self.answer.isGoodAnswer(s: "2"))
-        XCTAssertTrue(self.answer.isGoodAnswer(s: "5"))
-        XCTAssertTrue(self.answer.isGoodAnswer(s: " 5 "))
+        XCTAssertFalse(self.answer.isGoodAnswer(solution: "0"))
+        XCTAssertFalse(self.answer.isGoodAnswer(solution: "test"))
+        XCTAssertFalse(self.answer.isGoodAnswer(solution: "2"))
+        XCTAssertTrue(self.answer.isGoodAnswer(solution: "5"))
+        XCTAssertTrue(self.answer.isGoodAnswer(solution: " 5 "))
         
     }
     
