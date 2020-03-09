@@ -14,8 +14,16 @@
 		9940FE092415855A004D6551 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9940FE082415855A004D6551 /* Assets.xcassets */; };
 		9940FE0C2415855A004D6551 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9940FE0B2415855A004D6551 /* Preview Assets.xcassets */; };
 		9940FE0F2415855A004D6551 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9940FE0D2415855A004D6551 /* LaunchScreen.storyboard */; };
-		9940FE1A2415855A004D6551 /* coo_questionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9940FE192415855A004D6551 /* coo_questionaryTests.swift */; };
-		9940FE252415855A004D6551 /* coo_questionaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9940FE242415855A004D6551 /* coo_questionaryUITests.swift */; };
+		9940FE252415855A004D6551 /* CooQuestionaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9940FE242415855A004D6551 /* CooQuestionaryUITests.swift */; };
+		9940FE3924158869004D6551 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9940FE3824158869004D6551 /* Question.swift */; };
+		9940FE3C24158FE5004D6551 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9940FE3B24158FE5004D6551 /* Answer.swift */; };
+		9940FE3E2415922E004D6551 /* AnswerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9940FE3D2415922E004D6551 /* AnswerProtocol.swift */; };
+		9940FE40241592E1004D6551 /* AnswerInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9940FE3F241592E1004D6551 /* AnswerInt.swift */; };
+		9940FE462415A7EF004D6551 /* AnswerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9940FE452415A7EF004D6551 /* AnswerTest.swift */; };
+		9940FE482415A9DB004D6551 /* AnswerIntTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9940FE472415A9DB004D6551 /* AnswerIntTest.swift */; };
+		9940FE4A2415BFDA004D6551 /* AnswerStringTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9940FE492415BFDA004D6551 /* AnswerStringTest.swift */; };
+		9940FE4C2415C078004D6551 /* AnswerString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9940FE4B2415C078004D6551 /* AnswerString.swift */; };
+		99BDC8F22415E62000E2599B /* QuestionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BDC8F12415E62000E2599B /* QuestionTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,12 +54,21 @@
 		9940FE0E2415855A004D6551 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9940FE102415855A004D6551 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9940FE152415855A004D6551 /* coo-questionaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "coo-questionaryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9940FE192415855A004D6551 /* coo_questionaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coo_questionaryTests.swift; sourceTree = "<group>"; };
 		9940FE1B2415855A004D6551 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9940FE202415855A004D6551 /* coo-questionaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "coo-questionaryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9940FE242415855A004D6551 /* coo_questionaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coo_questionaryUITests.swift; sourceTree = "<group>"; };
+		9940FE242415855A004D6551 /* CooQuestionaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CooQuestionaryUITests.swift; sourceTree = "<group>"; };
 		9940FE262415855A004D6551 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9940FE3224158628004D6551 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9940FE3824158869004D6551 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		9940FE3B24158FE5004D6551 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		9940FE3D2415922E004D6551 /* AnswerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerProtocol.swift; sourceTree = "<group>"; };
+		9940FE3F241592E1004D6551 /* AnswerInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerInt.swift; sourceTree = "<group>"; };
+		9940FE452415A7EF004D6551 /* AnswerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerTest.swift; sourceTree = "<group>"; };
+		9940FE472415A9DB004D6551 /* AnswerIntTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerIntTest.swift; sourceTree = "<group>"; };
+		9940FE492415BFDA004D6551 /* AnswerStringTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerStringTest.swift; sourceTree = "<group>"; };
+		9940FE4B2415C078004D6551 /* AnswerString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerString.swift; sourceTree = "<group>"; };
+		99BDC8F12415E62000E2599B /* QuestionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTest.swift; sourceTree = "<group>"; };
+		99BDC8F72415EA9100E2599B /* coo-questionary.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "coo-questionary.xctestplan"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,10 +99,12 @@
 		9940FDF324158557004D6551 = {
 			isa = PBXGroup;
 			children = (
+				99BDC8F72415EA9100E2599B /* coo-questionary.xctestplan */,
 				9940FDFE24158557004D6551 /* coo-questionary */,
 				9940FE182415855A004D6551 /* coo-questionaryTests */,
 				9940FE232415855A004D6551 /* coo-questionaryUITests */,
 				9940FDFD24158557004D6551 /* Products */,
+				9940FE3224158628004D6551 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +121,8 @@
 		9940FDFE24158557004D6551 /* coo-questionary */ = {
 			isa = PBXGroup;
 			children = (
+				9940FE3A24158FB9004D6551 /* Answers */,
+				9940FE3524158831004D6551 /* Questionary */,
 				9940FDFF24158557004D6551 /* AppDelegate.swift */,
 				9940FE0124158557004D6551 /* SceneDelegate.swift */,
 				9940FE0624158557004D6551 /* ContentView.swift */,
@@ -110,7 +131,6 @@
 				9940FE102415855A004D6551 /* Info.plist */,
 				9940FE0324158557004D6551 /* coo_questionary.xcdatamodeld */,
 				9940FE0A2415855A004D6551 /* Preview Content */,
-				9940FE3224158628004D6551 /* README.md */,
 			);
 			path = "coo-questionary";
 			sourceTree = "<group>";
@@ -126,8 +146,11 @@
 		9940FE182415855A004D6551 /* coo-questionaryTests */ = {
 			isa = PBXGroup;
 			children = (
-				9940FE192415855A004D6551 /* coo_questionaryTests.swift */,
 				9940FE1B2415855A004D6551 /* Info.plist */,
+				9940FE452415A7EF004D6551 /* AnswerTest.swift */,
+				9940FE472415A9DB004D6551 /* AnswerIntTest.swift */,
+				9940FE492415BFDA004D6551 /* AnswerStringTest.swift */,
+				99BDC8F12415E62000E2599B /* QuestionTest.swift */,
 			);
 			path = "coo-questionaryTests";
 			sourceTree = "<group>";
@@ -135,10 +158,29 @@
 		9940FE232415855A004D6551 /* coo-questionaryUITests */ = {
 			isa = PBXGroup;
 			children = (
-				9940FE242415855A004D6551 /* coo_questionaryUITests.swift */,
+				9940FE242415855A004D6551 /* CooQuestionaryUITests.swift */,
 				9940FE262415855A004D6551 /* Info.plist */,
 			);
 			path = "coo-questionaryUITests";
+			sourceTree = "<group>";
+		};
+		9940FE3524158831004D6551 /* Questionary */ = {
+			isa = PBXGroup;
+			children = (
+				9940FE3824158869004D6551 /* Question.swift */,
+			);
+			path = Questionary;
+			sourceTree = "<group>";
+		};
+		9940FE3A24158FB9004D6551 /* Answers */ = {
+			isa = PBXGroup;
+			children = (
+				9940FE3B24158FE5004D6551 /* Answer.swift */,
+				9940FE3D2415922E004D6551 /* AnswerProtocol.swift */,
+				9940FE3F241592E1004D6551 /* AnswerInt.swift */,
+				9940FE4B2415C078004D6551 /* AnswerString.swift */,
+			);
+			path = Answers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +228,7 @@
 				9940FE1C2415855A004D6551 /* Sources */,
 				9940FE1D2415855A004D6551 /* Frameworks */,
 				9940FE1E2415855A004D6551 /* Resources */,
+				9940FE4D2415C8EB004D6551 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -267,13 +310,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9940FE4D2415C8EB004D6551 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9940FDF824158557004D6551 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9940FE3924158869004D6551 /* Question.swift in Sources */,
+				9940FE3E2415922E004D6551 /* AnswerProtocol.swift in Sources */,
+				9940FE3C24158FE5004D6551 /* Answer.swift in Sources */,
 				9940FE0024158557004D6551 /* AppDelegate.swift in Sources */,
+				9940FE4C2415C078004D6551 /* AnswerString.swift in Sources */,
 				9940FE0224158557004D6551 /* SceneDelegate.swift in Sources */,
+				9940FE40241592E1004D6551 /* AnswerInt.swift in Sources */,
 				9940FE0724158557004D6551 /* ContentView.swift in Sources */,
 				9940FE0524158557004D6551 /* coo_questionary.xcdatamodeld in Sources */,
 			);
@@ -283,7 +352,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9940FE1A2415855A004D6551 /* coo_questionaryTests.swift in Sources */,
+				9940FE462415A7EF004D6551 /* AnswerTest.swift in Sources */,
+				99BDC8F22415E62000E2599B /* QuestionTest.swift in Sources */,
+				9940FE482415A9DB004D6551 /* AnswerIntTest.swift in Sources */,
+				9940FE4A2415BFDA004D6551 /* AnswerStringTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9940FE252415855A004D6551 /* coo_questionaryUITests.swift in Sources */,
+				9940FE252415855A004D6551 /* CooQuestionaryUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
