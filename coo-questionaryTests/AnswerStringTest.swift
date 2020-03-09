@@ -25,6 +25,7 @@ class AnswerStringTest : AnswerTest<String>
            XCTAssertFalse(self.answer.isGoodType(solution: "$ùa"))
            XCTAssertFalse(self.answer.isGoodType(solution: "124"))
            XCTAssertFalse(self.answer.isGoodType(solution: "$ù"))
+           XCTAssertFalse(self.answer.isGoodType(solution: ""))
            XCTAssertFalse(self.answer.isGoodType(solution: "% "))
            XCTAssertFalse(self.answer.isGoodType(solution: " 1 "))
            XCTAssertTrue(self.answer.isGoodType(solution: "Hello"))
