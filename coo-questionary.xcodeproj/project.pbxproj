@@ -21,9 +21,11 @@
 		9940FE40241592E1004D6551 /* AnswerInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9940FE3F241592E1004D6551 /* AnswerInt.swift */; };
 		9940FE462415A7EF004D6551 /* AnswerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9940FE452415A7EF004D6551 /* AnswerTest.swift */; };
 		9940FE482415A9DB004D6551 /* AnswerIntTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9940FE472415A9DB004D6551 /* AnswerIntTest.swift */; };
-		9940FE4A2415BFDA004D6551 /* AnswerStringTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9940FE492415BFDA004D6551 /* AnswerStringTest.swift */; };
 		9940FE4C2415C078004D6551 /* AnswerString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9940FE4B2415C078004D6551 /* AnswerString.swift */; };
 		99BDC8F22415E62000E2599B /* QuestionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BDC8F12415E62000E2599B /* QuestionTest.swift */; };
+		99BDC8F92415EEF400E2599B /* AnswerStringTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BDC8F82415EEF400E2599B /* AnswerStringTest.swift */; };
+		99BDC8FB2416D60D00E2599B /* AnswerBoolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BDC8FA2416D60D00E2599B /* AnswerBoolTest.swift */; };
+		99BDC8FD2416D78E00E2599B /* AnswerBool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BDC8FC2416D78E00E2599B /* AnswerBool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,10 +67,12 @@
 		9940FE3F241592E1004D6551 /* AnswerInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerInt.swift; sourceTree = "<group>"; };
 		9940FE452415A7EF004D6551 /* AnswerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerTest.swift; sourceTree = "<group>"; };
 		9940FE472415A9DB004D6551 /* AnswerIntTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerIntTest.swift; sourceTree = "<group>"; };
-		9940FE492415BFDA004D6551 /* AnswerStringTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerStringTest.swift; sourceTree = "<group>"; };
 		9940FE4B2415C078004D6551 /* AnswerString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerString.swift; sourceTree = "<group>"; };
 		99BDC8F12415E62000E2599B /* QuestionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTest.swift; sourceTree = "<group>"; };
 		99BDC8F72415EA9100E2599B /* coo-questionary.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "coo-questionary.xctestplan"; sourceTree = "<group>"; };
+		99BDC8F82415EEF400E2599B /* AnswerStringTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerStringTest.swift; sourceTree = "<group>"; };
+		99BDC8FA2416D60D00E2599B /* AnswerBoolTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerBoolTest.swift; sourceTree = "<group>"; };
+		99BDC8FC2416D78E00E2599B /* AnswerBool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerBool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,8 +153,9 @@
 				9940FE1B2415855A004D6551 /* Info.plist */,
 				9940FE452415A7EF004D6551 /* AnswerTest.swift */,
 				9940FE472415A9DB004D6551 /* AnswerIntTest.swift */,
-				9940FE492415BFDA004D6551 /* AnswerStringTest.swift */,
 				99BDC8F12415E62000E2599B /* QuestionTest.swift */,
+				99BDC8F82415EEF400E2599B /* AnswerStringTest.swift */,
+				99BDC8FA2416D60D00E2599B /* AnswerBoolTest.swift */,
 			);
 			path = "coo-questionaryTests";
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 				9940FE3D2415922E004D6551 /* AnswerProtocol.swift */,
 				9940FE3F241592E1004D6551 /* AnswerInt.swift */,
 				9940FE4B2415C078004D6551 /* AnswerString.swift */,
+				99BDC8FC2416D78E00E2599B /* AnswerBool.swift */,
 			);
 			path = Answers;
 			sourceTree = "<group>";
@@ -341,6 +347,7 @@
 				9940FE3C24158FE5004D6551 /* Answer.swift in Sources */,
 				9940FE0024158557004D6551 /* AppDelegate.swift in Sources */,
 				9940FE4C2415C078004D6551 /* AnswerString.swift in Sources */,
+				99BDC8FD2416D78E00E2599B /* AnswerBool.swift in Sources */,
 				9940FE0224158557004D6551 /* SceneDelegate.swift in Sources */,
 				9940FE40241592E1004D6551 /* AnswerInt.swift in Sources */,
 				9940FE0724158557004D6551 /* ContentView.swift in Sources */,
@@ -352,10 +359,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99BDC8FB2416D60D00E2599B /* AnswerBoolTest.swift in Sources */,
 				9940FE462415A7EF004D6551 /* AnswerTest.swift in Sources */,
 				99BDC8F22415E62000E2599B /* QuestionTest.swift in Sources */,
+				99BDC8F92415EEF400E2599B /* AnswerStringTest.swift in Sources */,
 				9940FE482415A9DB004D6551 /* AnswerIntTest.swift in Sources */,
-				9940FE4A2415BFDA004D6551 /* AnswerStringTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
