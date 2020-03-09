@@ -22,14 +22,22 @@ class AnswerStringTest : AnswerTest<String>
     
     func testIsGoodType()
        {
-           XCTAssertFalse(self.answer.isGoodType(solution: "a"))
-           XCTAssertFalse(self.answer.isGoodType(solution: "a1"))
-           XCTAssertFalse(self.answer.isGoodType(solution: "deux"))
-           XCTAssertFalse(self.answer.isGoodType(solution: "%"))
-           XCTAssertTrue(self.answer.isGoodType(solution: "1"))
-           XCTAssertTrue(self.answer.isGoodType(solution: "1993"))
-           XCTAssertTrue(self.answer.isGoodType(solution: "0"))
-           XCTAssertTrue(self.answer.isGoodType(solution: " 14 "))
+           XCTAssertFalse(self.answer.isGoodType(solution: "$ùa"))
+           XCTAssertFalse(self.answer.isGoodType(solution: "124"))
+           XCTAssertFalse(self.answer.isGoodType(solution: "$ù"))
+           XCTAssertFalse(self.answer.isGoodType(solution: "% "))
+           XCTAssertFalse(self.answer.isGoodType(solution: " 1 "))
+           XCTAssertTrue(self.answer.isGoodType(solution: "Hello"))
+           XCTAssertTrue(self.answer.isGoodType(solution: "hello"))
+           XCTAssertTrue(self.answer.isGoodType(solution: " youow "))
        }
+    
+    func testIsGoodAnswer()
+    {
+        XCTAssertFalse(self.answer.isGoodAnswer(solution: "Test" ))
+        XCTAssertFalse(self.answer.isGoodAnswer(solution: "1234" ))
+        XCTAssertFalse(self.answer.isGoodAnswer(solution: "yes" ))
+        XCTAssertTrue(self.answer.isGoodAnswer(solution: ANSWER ))
+    }
     
 }
