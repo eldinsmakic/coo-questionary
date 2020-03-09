@@ -1,8 +1,7 @@
 # Questionary Project
     
-The Objective here is the application of some COO Design Patern in creating a simple questionary 
-where you are ask some questions and need to answer them.
-
+The Objective here is the application of some COO Design Patern and TDD in creating a simple questionary 
+where you are ask some questions and need to answer them, each question have a number of point that can be earned if respond with the good answer.
 
 
 
