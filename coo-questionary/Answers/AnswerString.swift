@@ -11,7 +11,18 @@ import Foundation
 class AnswerString : Answer<String>
 {
     override func canBeConverted(solution: String) -> Bool {
-        return true
+        let solutionTrim = NSString(string: solution.trimmingCharacters(in: .whitespacesAndNewlines))
+        let resultat = solutionTrim.replacingOccurrences(of: "[a-zA-Z]", with: "", options: .regularExpression, range: NSRange(location: 0, length: solutionTrim.length))
+        return resultat.isEmpty
     }
     
+    
+    override func convertToAnswer(solution: String) -> String
+    {
+        return solution.trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+    
+    override func isEqual(solution: String) -> Bool {
+         return self.getAnswer() == self.convertToAnswer(solution: solution)
+    }
 }
