@@ -33,23 +33,30 @@ public class Answer<T> : AnswerProtocol
     
  
     func isGoodAnswer(solution: String) -> Bool {
-        return false
+        if (isGoodType(solution: solution))
+        {
+            return isEqual(solution: solution)
+        }
+        else
+        {
+            return false
+        }
     }
     
-    
-    open func canBeConverted(solution:String) -> Bool
+
+    internal func canBeConverted(solution:String) -> Bool
     {
         return false
     }
     
-    open func convertToAnswer(solution:String) -> T
+    internal func convertToAnswer(solution:String) -> T
     {
         return self.getAnswer()
     }
     
     /// Check if s is Equal to Answer's solution
     /// - Parameter s: s potential solution
-    open func isEqual(solution:String) -> Bool
+    internal func isEqual(solution:String) -> Bool
     {
         return false
     }
