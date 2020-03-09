@@ -29,8 +29,8 @@ class AnswerInt : Answer<Int>
     
     override func canBeConverted(solution:String) -> Bool
     {
-        let x = Int(solution.trimmingCharacters(in: .whitespacesAndNewlines))
-        return x != nil
+        let result = Int(solution.trimmingCharacters(in: .whitespacesAndNewlines))
+        return result != nil
     }
     
     override func convertToAnswer(solution:String) -> Int
