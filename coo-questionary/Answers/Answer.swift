@@ -28,11 +28,30 @@ public class Answer<T> : AnswerProtocol
     
    
     func isGoodType(s: String) -> Bool {
-        return false
+        return canBeConverted(s: s)
     }
     
  
     func isGoodAnswer(s: String) -> Bool {
         return false
     }
+    
+    
+    open func canBeConverted(s:String) -> Bool
+    {
+        return false
+    }
+    
+    open func convertToAnswer(s:String) -> T
+    {
+        return self.getAnswer()
+    }
+    
+    /// Check if s is Equal to Answer's solution
+    /// - Parameter s: s potential solution
+    open func isEqual(s:String) -> Bool
+    {
+        return false
+    }
+    
 }

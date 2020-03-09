@@ -13,7 +13,6 @@ class AnswerInt : Answer<Int>
 {
     
     override func isGoodType(s: String) -> Bool {
-       print("HELLO")
        return canBeConverted(s: s)
     }
     
@@ -28,20 +27,20 @@ class AnswerInt : Answer<Int>
         }
     }
     
-    private func canBeConverted(s:String) -> Bool
+    override func canBeConverted(s:String) -> Bool
     {
         let x = Int(s.trimmingCharacters(in: .whitespacesAndNewlines))
         return x != nil
     }
     
-    private func convertToAnswer(s:String) -> Int
+    override func convertToAnswer(s:String) -> Int
     {
         return Int(s.trimmingCharacters(in: .whitespacesAndNewlines))!
     }
     
     /// Check if s is Equal to Answer's solution
     /// - Parameter s: s potential solution
-    private func isEqual(s:String) -> Bool
+    override func isEqual(s:String) -> Bool
     {
         return self.getAnswer() == self.convertToAnswer(s: s)
     }
