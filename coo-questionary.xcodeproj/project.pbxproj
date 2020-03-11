@@ -26,6 +26,7 @@
 		99BDC8F92415EEF400E2599B /* AnswerStringTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BDC8F82415EEF400E2599B /* AnswerStringTest.swift */; };
 		99BDC8FB2416D60D00E2599B /* AnswerBoolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BDC8FA2416D60D00E2599B /* AnswerBoolTest.swift */; };
 		99BDC8FD2416D78E00E2599B /* AnswerBool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BDC8FC2416D78E00E2599B /* AnswerBool.swift */; };
+		99BDC8FF24197A0500E2599B /* Questionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BDC8FE24197A0500E2599B /* Questionary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		99BDC8F82415EEF400E2599B /* AnswerStringTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerStringTest.swift; sourceTree = "<group>"; };
 		99BDC8FA2416D60D00E2599B /* AnswerBoolTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerBoolTest.swift; sourceTree = "<group>"; };
 		99BDC8FC2416D78E00E2599B /* AnswerBool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerBool.swift; sourceTree = "<group>"; };
+		99BDC8FE24197A0500E2599B /* Questionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questionary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				9940FE3824158869004D6551 /* Question.swift */,
+				99BDC8FE24197A0500E2599B /* Questionary.swift */,
 			);
 			path = Questionary;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				9940FE0224158557004D6551 /* SceneDelegate.swift in Sources */,
 				9940FE40241592E1004D6551 /* AnswerInt.swift in Sources */,
 				9940FE0724158557004D6551 /* ContentView.swift in Sources */,
+				99BDC8FF24197A0500E2599B /* Questionary.swift in Sources */,
 				9940FE0524158557004D6551 /* coo_questionary.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
