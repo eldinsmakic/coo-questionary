@@ -10,11 +10,10 @@ import XCTest
 
 @testable import coo_questionary
 
-class AnswerTest<T:Equatable>: XCTestCase {
-    
-    
-    var answer : Answer<T>!
-    
+class AnswerTest<T: Equatable>: XCTestCase {
+
+    var answer: Answer<T>!
+
     func createAnswer() -> Answer<T>
     {
         preconditionFailure("need Implementation in Subclasses")
@@ -27,15 +26,10 @@ class AnswerTest<T:Equatable>: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-    
+
     func testGetAnswer()
     {
            XCTAssertEqual(self.answer.getAnswer(), self.createAnswer().getAnswer())
     }
-       
-   
-    
 
 }
-
-

@@ -14,12 +14,11 @@ class AnswerIntTest: AnswerTest<Int>
 
 {
     let VALUE = 5
-    
+
     override func createAnswer() -> Answer<Int> {
         return AnswerInt(answer: VALUE)
     }
-       
-   
+
     func testIsGoodType()
     {
         XCTAssertFalse(self.answer.isGoodType(solution: "a"))
@@ -31,7 +30,7 @@ class AnswerIntTest: AnswerTest<Int>
         XCTAssertTrue(self.answer.isGoodType(solution: "0"))
         XCTAssertTrue(self.answer.isGoodType(solution: " 14 "))
     }
-    
+
     func testIsGoodAnswer()
     {
         XCTAssertFalse(self.answer.isGoodAnswer(solution: "0"))
@@ -39,7 +38,7 @@ class AnswerIntTest: AnswerTest<Int>
         XCTAssertFalse(self.answer.isGoodAnswer(solution: "2"))
         XCTAssertTrue(self.answer.isGoodAnswer(solution: "5"))
         XCTAssertTrue(self.answer.isGoodAnswer(solution: " 5 "))
-        
+
     }
-    
+
 }

@@ -9,38 +9,37 @@
 import Foundation
 
 /// Integer version of an Answer
-class AnswerInt : Answer<Int>
+class AnswerInt: Answer<Int>
 {
-    
+
     override func isGoodType(solution: String) -> Bool {
        return canBeConverted(solution: solution)
     }
-    
+
     override func isGoodAnswer(solution: String) -> Bool {
-        if (isGoodType(solution: solution))
+        if isGoodType(solution: solution)
         {
             return isEqual(solution: solution)
-        }
-        else
+        } else
         {
             return false
         }
     }
-    
-    override func canBeConverted(solution:String) -> Bool
+
+    override func canBeConverted(solution: String) -> Bool
     {
         let result = Int(solution.trimmingCharacters(in: .whitespacesAndNewlines))
         return result != nil
     }
-    
-    override func convertToAnswer(solution:String) -> Int
+
+    override func convertToAnswer(solution: String) -> Int
     {
         return Int(solution.trimmingCharacters(in: .whitespacesAndNewlines))!
     }
-    
+
     /// Check if s is Equal to Answer's solution
     /// - Parameter s: s potential solution
-    override func isEqual(solution:String) -> Bool
+    override func isEqual(solution: String) -> Bool
     {
         return self.getAnswer() == self.convertToAnswer(solution: solution)
     }

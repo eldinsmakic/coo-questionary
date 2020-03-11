@@ -10,16 +10,14 @@ import XCTest
 
 @testable import coo_questionary
 
-
-class AnswerStringTest : AnswerTest<String>
+class AnswerStringTest: AnswerTest<String>
 {
     let ANSWER = "SWIFT"
-    
+
     override func createAnswer() -> Answer<String> {
         return AnswerString(answer: ANSWER)
     }
-    
-    
+
     func testIsGoodType()
        {
            XCTAssertFalse(self.answer.isGoodType(solution: "$ùa"))
@@ -32,7 +30,7 @@ class AnswerStringTest : AnswerTest<String>
            XCTAssertTrue(self.answer.isGoodType(solution: "hello"))
            XCTAssertTrue(self.answer.isGoodType(solution: " youow "))
        }
-    
+
     func testIsGoodAnswer()
     {
         XCTAssertFalse(self.answer.isGoodAnswer(solution: "Test" ))
@@ -40,5 +38,5 @@ class AnswerStringTest : AnswerTest<String>
         XCTAssertFalse(self.answer.isGoodAnswer(solution: "yes" ))
         XCTAssertTrue(self.answer.isGoodAnswer(solution: ANSWER ))
     }
-    
+
 }

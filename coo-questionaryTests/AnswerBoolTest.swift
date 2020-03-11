@@ -10,16 +10,14 @@ import XCTest
 
 @testable import coo_questionary
 
-class AnswerBoolTest : AnswerTest<String>
+class AnswerBoolTest: AnswerTest<String>
 {
     let SOLUTION = "yes"
-    
-    
+
     override func createAnswer() -> Answer<String> {
         return AnswerBool(answer: SOLUTION)
     }
-    
-    
+
     func testIsGoodType()
     {
         XCTAssertFalse(self.answer.isGoodType(solution: "efs"))
@@ -35,7 +33,7 @@ class AnswerBoolTest : AnswerTest<String>
         XCTAssertTrue(self.answer.isGoodType(solution: " NO "))
         XCTAssertTrue(self.answer.isGoodType(solution: " no "))
     }
-    
+
     func testIsGoodAnswer()
     {
         XCTAssertFalse(self.answer.isGoodAnswer(solution: " no "))

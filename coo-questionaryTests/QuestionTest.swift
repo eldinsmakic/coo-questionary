@@ -8,32 +8,27 @@
 
 import XCTest
 
-
 @testable import coo_questionary
 
-
 class QuestionTest<T>: XCTestCase {
-    
-    
-    
+
     func createAnswer() -> Answer<Any> {
         preconditionFailure("need Implementation in Subclasses")
     }
-    
-    
+
     let RIDDLE = "TEST"
     let POINT = 5
-    var answer : Answer<Any>!
-    var question : Question!
+    var answer: Answer<Any>!
+    var question: Question!
 
     private override init() {
         super.init()
     }
-    
+
     override func setUp() {
         super.setUp()
         self.answer = self.createAnswer()
-        self.question = Question(question: RIDDLE,point: POINT,answer: answer)
+        self.question = Question(question: RIDDLE, point: POINT, answer: answer)
     }
 
     override func tearDown() {
@@ -41,14 +36,13 @@ class QuestionTest<T>: XCTestCase {
     }
 
     func testRiddle() {
-        XCTAssertEqual(self.question.getRiddle() , RIDDLE)
+        XCTAssertEqual(self.question.getRiddle(), RIDDLE)
     }
-    
+
     func testPoint()
     {
         XCTAssertEqual(self.question.getPoint(), POINT)
     }
-    
 
     func testPerformanceExample() {
         // This is an example of a performance test case.

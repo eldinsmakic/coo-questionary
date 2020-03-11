@@ -10,13 +10,13 @@ import Foundation
 
 /// General method of an Answer
 protocol AnswerProtocol  {
-    
+
     /// Tell if the solution s is the good type of solution
     /// for example if the answer is an int, s is tested to
     /// be an Int ( can be casted)
-    func isGoodType( solution : String) -> Bool
+    func isGoodType( solution: String) -> Bool
 
     ///  tell if s is equal to the answer
-    func isGoodAnswer( solution : String ) -> Bool
+    func isGoodAnswer( solution: String ) -> Bool
 
 }
