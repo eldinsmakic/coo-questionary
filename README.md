@@ -33,4 +33,4 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## Authors@
 
-* **SMAKIC Eldin**  - *CO-developper* - [smakic](https://gitlab-etu.fil.univ-lille1.fr/smakic)
+* **SMAKIC Eldin**  - *CO-developper* - [smakic](https://github.com/eldinsmakic)
