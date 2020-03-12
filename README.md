@@ -27,10 +27,10 @@ These instructions will get you a copy of the project up and running on your loc
 
 
 * Swift
+* [SwiftLint](https://github.com/realm/SwiftLint)
 
 
 
-
-## Authors
+## Authors@
 
 * **SMAKIC Eldin**  - *CO-developper* - [smakic](https://gitlab-etu.fil.univ-lille1.fr/smakic)
